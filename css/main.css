@@ -1,0 +1,234 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+body {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #444;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection { background: #b3d4fc; text-shadow: none; }
+::selection { background: #b3d4fc; text-shadow: none; }
+
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe { margin: 0.2em 0; background: #ccc; color: #000; padding: 0.2em 0; }
+
+
+/* ==========================================================================
+   Global
+   ========================================================================== */
+
+/* typography */
+
+.masthead, .intro span, .member-name  { font-family: Garamond, Baskerville, Palatino, "Palatino Linotype", "Hoefler Text", "Times New Roman", serif; }
+.type-alt { font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif; }
+
+a { -webkit-transition: all 0.4s; -moz-transition: all 0.4s; -o-transition: all 0.4s; transition: all 0.4s; }
+  .section a { font-weight: bold; }
+a:hover { text-decoration: none; }
+
+/* buttons */
+
+.button-large {
+  color: #fff;
+  padding: 16px 24px 17px 24px;
+  font-size: 14px;
+  font-weight: bold;
+  text-shadow: none;
+  background-color: #3b5675;
+  border: 0 none;
+  -webkit-box-shadow: inset 0 -1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 -1px rgba(0,0,0,0.1);
+  box-shadow: inset 0 -1px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+  .button-large:hover, .button-large a:hover {
+    color: #eee;
+    background-color: #2e4259;
+  }
+
+.button-large-outline {
+  padding: 14px 22px 15px 22px;
+  background: none;
+  border: 2px solid #979687;
+}
+  .button-large-outline:hover, .button-large-outline a:hover {
+    border-color: #fdd931;
+    color: #eee;
+    background: none;
+  }
+
+.button-small {
+  display: inline-block;
+  margin-top: 5px;
+  color: #999;
+  padding: 5px 10px 6px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  font-weight: bold;
+  text-shadow: none;
+  background: none;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+
+  .button-small:hover {
+    color: #666;
+    border-color: #aaa;
+  }
+
+/* sections */
+
+.section { padding: 40px 0 35px; }
+  .section .section-label { color: #ccc; margin-bottom: 15px; font-size: 14px; line-height: 1.6; letter-spacing: 0.3em; font-weight: bold; text-transform: uppercase; border-bottom: 2px solid #eee; display: inline-block; }
+  .section .module-title { font-size: 18px; line-height: 1.6;}
+
+.section-light { color: #555; background: #f5f5f5; }
+.section-dark { color: #fff; background: #2E3133; }
+
+/* page-title */
+
+.page-title { color: #444; padding: 20px 0; border-top: 1px solid #eee; margin-top: -1px; text-align: center; }
+  .page-title h1 { font-size: 32px; margin: 0; line-height: 1.4; }
+  .page-title h2 { font-size: 24px; margin: 0; line-height: 1.4; }
+
+/* ==========================================================================
+   Menu
+   ========================================================================== */
+
+body > .navbar { font-size: 12px; margin-bottom: 0; }
+.navbar-inner { -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0; }
+.navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
+body > .navbar i { margin-right: 2px; }
+
+/*
+.navbar-inner { background-image: none; background: #fff; border: 1px solid #ddd; -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus { color: #555; background-color: none; background: none; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
+.navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle { color: #555; background-color: none; background: none; }
+*/
+
+/* ==========================================================================
+   Brand
+   ========================================================================== */
+
+.masthead { text-align: center; }
+  .masthead .logo { text-align: center; margin: 0; }
+  .masthead .span6 { padding-top: 20px; border-bottom: 4px solid #fdd931; }
+  .masthead .site-title { font-size: 28px; margin: 0; line-height: 1.2; font-weight: normal; }
+  .masthead .site-desc { font-size: 22px; margin: 0 0 25px; line-height: 1.2; font-style: italic; font-weight: normal; }
+
+/* ==========================================================================
+   Index
+   ========================================================================== */
+
+.featured { margin: 0; position: relative; overflow: hidden; }
+  #gallery1 { list-style: none; margin: 0; padding: 0; overflow: hidden; }
+    #gallery1 li { float: left; }
+    #gallery1 li.mid { width: 33.333334%;}
+    #gallery1 li.lft, #gallery1 li.rht { width: 33.333333%;}
+      #gallery1 li img { width: 100%; }
+
+  .featured-intro { overflow: hidden; text-align: center; background: #222; color: #eee; padding: 50px 0 45px; }
+    .featured-intro { overflow: hidden; }
+      .featured-intro h3 { font-size: 22px; font-weight: bold; margin: 0 0 25px; padding: 0; line-height: 1; }
+      .featured-intro p { clear: both; line-height: 1.6; padding-top: 10px; }
+        .featured-intro .button-large { margin: 0 7px; }
+
+  #gallery2 { list-style: none; margin: 0; padding: 0; overflow: hidden; }
+    #gallery2 li { float: left; overflow: hidden; }
+      #gallery2 li.mid { width: 33.333334%;}
+      #gallery2 li.lft, #gallery2 li.rht { width: 33.333333%;}
+        #gallery2 li img.img-sm { width: 33.333333333333%; float: left; }
+        #gallery2 li img.img-md { width: 66.666633333367%; float: right; }
+
+.sponsors { text-align: center;  }
+
+
+/* ==========================================================================
+   About page
+   ========================================================================== */
+
+.info { font-size: 22px; }
+#map_canvas { margin-top: 30px; height: 500px!important; }
+
+
+/* ==========================================================================
+   Team Page
+   ========================================================================== */
+
+.team-page .intro { padding: 13px 0; margin-bottom: 25px; }
+
+.team-page .section-label { color: #aaa; margin: 0 0 30px; border-bottom: none; text-align: center; display: block; }
+
+.member{ background: #fff; box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25); margin-bottom: 55px;}
+.member:hover{ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25); }
+
+  .member-title { padding: 15px 0 0; text-decoration: none; text-align: center; color: #222; line-height: 1;}
+    .member-position { color: #666; font-size: 10px; text-transform: uppercase; letter-spacing: 2px; }
+    .member-name { font-size: 20px; font-weight: bold;}
+    .member-bio { font-size: 14px; padding: 0 15px; }
+
+
+/* ==========================================================================
+   Archive Page
+   ========================================================================== */
+
+.archive-page {}
+
+.canoe { padding: 30px 0; border-top: 1px solid #eee; }
+  .canoe-year, .canoe-title, .canoe-paper { margin: 0; }
+  .canoe-paper { line-height: 32px; }
+
+/* ==========================================================================
+   Sponsor Page
+   ========================================================================== */
+
+.sponsor-page .module { margin-bottom: 40px; }
+
+.donate-link { color: #fff; background: #ff6140; border-color: #ff6e40; }
+  .donate-link:hover { color: #eee; background: #ff8b40; }
+
+.sponsor-page .materials { list-style: none; margin: 20px 0 0; border-top: 1px solid #ddd; }
+  .sponsor-page .materials li { border-bottom: 1px solid #ddd; padding: 10px 0; }
+
+.sponsor-desc  { font-size: 12px; }
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.footer { color: #777; padding: 40px 0; font-size: 12px; color: #777E83; background: #2E3133; }
+
+  .footer h4 { font-size: 14px; margin-bottom: 20px; }
+
+  .footer ul { list-style: none; padding: 0; margin: 0; font-size: 14px;  }
+    .footer ul li a { color: #ddd; }
+    .footer ul li a:hover { text-decoration: none; color: #777E83; }
+
+  .copyright { margin-top: 25px; padding-top: 25px; text-align: center; color: #777E83; border-top: 1px solid #3A3E40; }
